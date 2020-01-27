@@ -51,7 +51,9 @@ a{
 }
 
 table{
-    border: 2px solid black;
+  border-collapse:separate;
+  border-radius: 15px;
+  border: 2px solid black;
 }
 
 .colhead{
@@ -64,7 +66,7 @@ table{
 }
 
 .rowhead{
-  border: 2px solid black;
+  border-top: 2px solid black;
 }
 
 td{
@@ -85,11 +87,26 @@ tr:hover{
   background: #7e0820;
   opacity: .5;
 }
+
 tr{}
 
 *{}
 
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+  border-radius: 15px 0px 0px 0px;
+}
+
+thead tr:first-child th:last-child{
+  border-radius: 0px 15px 0px 0px;
+}
+
+tr:last-child th:first-child{
+  border-radius: 0px 0px 0px 15px;
+}
+
+tr:last-child td:last-child{
+  border-radius: 0px 0px 15px 0px;
+}
 
 footer{
   position:fixed;
@@ -99,4 +116,5 @@ footer{
   background:black;
   text-align:center;
   color: white;
+  min-height: 60px;
 }

@@ -85,8 +85,9 @@ tr:nth-child(even){
 }
 
 tr:hover{
-  background: #7e0820;
-  opacity: .5;
+  background-color: rgba(126, 8, 32, .5);
+  color: black;
+  /* #7e0820 is rgba(126,8,32) */
 }
 
 tr{}
